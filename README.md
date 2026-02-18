@@ -3,6 +3,8 @@
 Automatische transcriptie van audio- en videobestanden naar Word documenten met WhisperX.
 Deze versie is specifiek voor **macOS met Intel-processor**.
 
+> Samengesteld door **[Hogeschool PXL](https://www.pxl.be/) - Zorginnovatie**
+
 > Andere versies: [macOS Apple Silicon](https://github.com/grejo/CML_Transcriptie_Whisper) | [Windows](https://github.com/grejo/CML_Transcriptie_Whisper_Windows)
 
 ---
@@ -123,3 +125,21 @@ Rechtermuisklik > Open > Open. macOS blokkeert onbekende scripts standaard.
 
 **Ik wil opnieuw beginnen met een schone installatie?**
 Verwijder de `venv` map in de projectmap en start opnieuw.
+
+---
+
+## Bouwstenen
+
+Deze tool is opgebouwd met de volgende open-source componenten:
+
+| Component | Beschrijving | Link |
+|---|---|---|
+| **WhisperX** | Snelle spraakherkenning met woordniveau-timestamps, gebaseerd op OpenAI Whisper | [github.com/m-bain/whisperX](https://github.com/m-bain/whisperX) |
+| **OpenAI Whisper** | Het onderliggende spraakherkenningsmodel van OpenAI | [github.com/openai/whisper](https://github.com/openai/whisper) |
+| **Faster Whisper** | CTranslate2-backend voor snellere inferentie van Whisper-modellen | [github.com/SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) |
+| **CTranslate2** | Geoptimaliseerde inferentie-engine voor Transformer-modellen | [github.com/OpenNMT/CTranslate2](https://github.com/OpenNMT/CTranslate2) |
+| **PyTorch** | Machine learning framework | [pytorch.org](https://pytorch.org/) |
+| **Hugging Face Transformers** | Platform voor het laden van voorgetrainde AI-modellen | [huggingface.co](https://huggingface.co/) |
+| **FFmpeg** | Audio- en videoconversie | [ffmpeg.org](https://ffmpeg.org/) |
+| **python-docx** | Word-documenten genereren vanuit Python | [github.com/python-openxml/python-docx](https://github.com/python-openxml/python-docx) |
+| **librosa** | Audioanalyse en -verwerking | [github.com/librosa/librosa](https://github.com/librosa/librosa) |
